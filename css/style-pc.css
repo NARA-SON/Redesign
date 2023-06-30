@@ -184,6 +184,22 @@
     background: #fff;
   }
 
+  /* 
+  header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    opacity: 0.3;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  header.on:after {
+    opacity: 0.5;
+  } */
+
   /* 메인로고 크기조절 */
   .mobileLogo {
     display: none;
@@ -1269,14 +1285,18 @@
     position: relative;
   }
 
-  .step>figure {
+  .step3_1 {
     position: absolute;
     top: 30%;
     right: 0;
+    width: 700px;
   }
 
-  .step>figure>img {
-    width: 700px;
+  .step3_2 {
+    position: absolute;
+    top: 46%;
+    left: -40%;
+    width: 40%;
   }
 
   .step>div {
@@ -1409,7 +1429,7 @@
 
   .sp2ImgTrain {
     width: 2760px;
-    height: 700px;
+    height: 850px;
     display: flex;
     align-items: center;
     margin-top: 150px;
@@ -1440,7 +1460,7 @@
 
   .sp2ImgTrain>li.on>.sp2Txt {
     width: 320px;
-    height: 400px;
+    height: 200px;
     display: block;
     flex-shrink: 0;
   }
@@ -1480,7 +1500,7 @@
   .sp2Btn {
     position: absolute;
     bottom: 39%;
-    left: 22%;
+    left: 19%;
     cursor: pointer;
     font-size: 4rem;
     color: #9e9e9e;
@@ -1502,7 +1522,7 @@
 
   .sp3ImgTrain {
     width: 2760px;
-    height: 700px;
+    height: 800px;
     display: flex;
     align-items: center;
     margin-top: 150px;
@@ -1533,7 +1553,7 @@
 
   .sp3ImgTrain>li.on>.sp3Txt {
     width: 320px;
-    height: 400px;
+    height: 200px;
     display: block;
     flex-shrink: 0;
   }
@@ -1573,7 +1593,7 @@
   .sp3Btn {
     position: absolute;
     bottom: 39%;
-    left: 22%;
+    left: 20%;
     cursor: pointer;
     font-size: 4rem;
     color: #9e9e9e;
