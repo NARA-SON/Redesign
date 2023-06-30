@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinique 3-step</title>
+
+  <!-- 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/b09d8fd2ad.js" crossorigin="anonymous"></script>
+
+  <!-- css연결 -->
+  <link rel="stylesheet" href="./css/style-pc.css">
+  <link rel="stylesheet" href="./css/style-mo.css">
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <!-- 제이쿼리, 자바스크립트 연결 -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/sliderStep1.js"></script>
+  <script src="./js/sliderStep2.js"></script>
+  <script src="./js/sliderStep3.js"></script>
+  <!-- <script src="./js/naraSlider.js"></script> -->
+</head>
+
+<body>
+  <div class="btnTop"><img src="./img/up-arrow.png" alt="TOP이동"></div>
+  <!-- header -->
+  <header>
+    <!-- header : menu -->
+    <nav>
+      <div class="mainLogo">
+        <img src="./img/logo(bar black).png" alt="크리니크로고">
+      </div>
+      <ul class="gnb">
+        <li><a href="#">크리니크</a>
+          <div class="gnb2dep">
+            <ul>
+              <li><a href="#">크리니크 스토리</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">스킨케어</a>
+          <div class="gnb2dep">
+            <p class="arrowBtn"><a href="#">스킨케어 메인</a></p>
+            <ul>
+              <li><a href="#">제품유형</a>
+                <ul>
+                  <li><a href="#">모이스춰라이저</a></li>
+                  <li><a href="#">클렌저&리무버</a></li>
+                  <li><a href="#">토너</a></li>
+                  <li><a href="#">세럼</a></li>
+                  <li><a href="#">스크럽&마스크</a></li>
+                  <li><a href="#">아이&립 케어</a></li>
+                  <li><a href="#">오일-프리</a></li>
+                  <li><a href="#">자외선 차단</a></li>
+                </ul>
+              </li>
+              <li><a href="#">피부고민</a>
+                <ul>
+                  <li><a href="#">피부트러블</a></li>
+                  <li><a href="#">피부 톤</a></li>
+                  <li><a href="#">건조함</a></li>
+                  <li><a href="#">잔주름 및 주름</a></li>
+                  <li><a href="#">모공</a></li>
+                </ul>
+              </li>
+              <li class="manCare"><a href="#">남성케어</a>
+                <ul>
+                  <li><a href="#">그루밍가이드</a></li>
+                  <li><a href="#">제품유형</a>
+                    <ul>
+                      <li><a href="#">토너</a></li>
+                      <li><a href="#">모이스춰라이저</a></li>
+                      <li><a href="#">집중관리</a></li>
+                      <li><a href="#">향수</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">피부고민</a>
+                    <ul>
+                      <li><a href="#">피부 트러블</a></li>
+                      <li><a href="#">오일 컨트롤</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">메이크업</a>
+          <div class="gnb2dep">
+            <p class="arrowBtn"><a href="#">메이크업 메인</a></p>
+            <ul>
+              <li><a href="#">페이스</a>
+                <ul>
+                  <li><a href="#">파운데이션</a></li>
+                  <li><a href="#">블러쉬</a></li>
+                  <li><a href="#">컨실러</a></li>
+                  <li><a href="#">파우더</a></li>
+                  <li><a href="#">메이크업 리무버</a></li>
+                </ul>
+              </li>
+              <li><a href="#">립</a>
+                <ul>
+                  <li><a href="#">립스틱</a></li>
+                  <li><a href="#">립글로스</a></li>
+                </ul>
+              </li>
+              <li><a href="#">아이</a>
+                <ul>
+                  <li><a href="#">마스카라</a></li>
+                  <li><a href="#">브로우</a></li>
+                  <li><a href="#">아이라이너</a></li>
+                  <li><a href="#">아이섀도우</a></li>
+                  <li><a href="#">메이크업 리무버</a></li>
+                </ul>
+              </li>
+              <li><a href="#">액세서리&브러쉬</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">공식몰 단독 혜택</a>
+          <div class="gnb2dep">
+            <ul>
+              <li><a href="#">공식몰 단독혜택</a></li>
+              <li><a href="#">프라이빗 세일</a></li>
+              <li><a href="#">크리니컬 리얼리티</a></li>
+              <li><a href="#">스킨스쿨</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="lnb">
+        <li><a href="#"><img src="./img/ui_search.png" alt="찾기"></a></li>
+        <li><a href="#"><img src="./img/ui_shopping.png" alt="장바구니"></a></li>
+        <li><a href="#"><img src="./img/ui_mapage.png" alt="마이페이지"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- 3-step page(1)-->
+  <main>
+    <div class="step contents">
+      <figure>
+        <img src="./img/step/3step.jpg" alt="3step">
+      </figure>
+      <div>
+        <h3>A SIMPLE ROUTINE FOR GREAT SKIN</h3>
+        <h1>3 - STEP</h1>
+        <h2>내 피부에 맞는 스킨 케어 방법을 찾아 보세요.<br>
+          피부 타입별 맞춤형 3-스텝 스킨 케어 제품을 소개합니다.</h2>
+      </div>
+    </div>
+    <!-- 3-step page(2)-->
+    <div class="sp1Station">
+      <div class="sp1Title">
+        <img src="./img/step/step1cl.png" alt="1.세안">
+      </div>
+      <ul class="sp1ImgTrain">
+        <li>
+          <div class="sp1Img">
+            <img src="./img/step/step1_aac.png" alt="step1_aac">
+          </div>
+          <div class="sp1Txt">
+            <h4>올 어바웃 클린 린스-오프 포밍 클렌저</h4>
+            <p>메이크업과 자외선 차단제를 말끔하게 지워주는 부드러운 무스 타입의 포밍 클렌저.<br>풍부한 거품이 순하고 부드럽게 클렌징할 수 있도록 도와주며,<br>
+              수분을 공급하여 피부를 편안하게 해줍니다.</p>
+          </div>
+        </li>
+        <li>
+          <div class="sp1Img">
+            <img src="./img/step/step1_aacf.png" alt="step1_aacf">
+          </div>
+          <div class="sp1Txt">
+            <h4>올 어바웃 클린 포밍 페이셜 솝</h4>
+            <p>효과적으로 노폐물과 과잉 피지를 씻어내주는 세안용 젤 타입 포밍 클렌저.<br>
+              소닉 퓨리파잉 클렌징 브러쉬와 함께 사용되어 피부의 피지, 먼지, 노폐물 등을 더욱 말끔히 제거하도록 특별히 개발된 부드러운 포밍 페이셜 솝입니다.</p>
+          </div>
+        </li>
+        <li>
+          <div class="sp1Img">
+            <img src="./img/step/step1_aaca.png" alt="step1_aaca">
+          </div>
+          <div class="sp1Txt">
+            <h4>올 어바웃 클린 리퀴드 페이셜 솝 (마일드/오일리)</h4>
+            <p>효과적으로 노폐물과 과잉 피지를 씻어내주는 리퀴드 타입 세안용 클렌저.<br>
+              피부의 더러움과 노폐물을 자극 없이 씻어내지만,<br> 피부 보습막은 지켜 주어 세안으로 인한 건조함을 줄여주는 제품입니다.
+              <br>피부 표면의 각질을 부드럽게 하여 다음 단계에서 각질이 효과적으로 제거될 수 있도록 도와 줍니다.
+              <br>*지복합성/지성 제품은 멘톨 성분이 들어 있어 시원한 사용감을 느끼실 수 있습니다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="sp1Img">
+            <img src="./img/step/step1_aacl.png" alt="step1_aacl">
+          </div>
+          <div class="sp1Txt">
+            <h4>올 어바웃 클린 올인원 클렌징 미셀라 밀크 + 메이크업 리무버</h4>
+            <p>외부 오염으로부터 자극받은 피부를 순하고 깨끗하게 지켜줄 새로운 멀티 클렌저
+
+              피부에 수분을 가두어 두는 보습제 성분이 포함된 저자극 클렌저로, 자외선 차단제와 파운데이션을 포함한 페이스 메이크업부터 립 & 아이 메이크업까지 간편하게 지울 수 있습니다.
+              거품을 일으키지 않는 부드러운 밀키 텍스처로 물로 헹구거나 물 없이 티슈로 닦아 사용할 수 있습니다.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="sp1Btn"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>
+    <!-- 3-step page(3)-->
+    <div class="sp2Station">
+      <div class="sp2Title">
+        <img src="./img/step/step2.png" alt="2.각질관리">
+      </div>
+      <ul class="sp2ImgTrain">
+        <li class>
+          <div class="sp2Img">
+            <img src="./img/step/step2_cl.png" alt="step2_cl">
+          </div>
+          <div class="sp2Txt">
+            <h4>클래리파잉 로션<br> 트와이스 어 데이 엑스폴리에이터 1</h4>
+            <p>극건성 피부 추천<br>민감하고 건조한 피부를 위한 각질 관리용 기능성 토너.
+              피부 표면의 죽은 각질을 부드럽게 제거하여 피부 턴오버 주기를 촉진시켜 피부 본연의 빛을 되찾아줍니다. 이후 보습 성분이 더욱 잘 흡수할 수 있도록 도와주며 피부 보호막을 강화시켜 피부
+              자체의 힘을 길러 주고 더욱
+              건강하게 관리해 줍니다.</p>
+          </div>
+        </li>
+        <li>
+          <div class="sp2Img">
+            <img src="./img/step/step2_cl2.png" alt="step2_cl2">
+          </div>
+          <div class="sp2Txt">
+            <h4>클래리파잉 로션<br> 트와이스 어 데이 엑스폴리에이터 2</h4>
+            <p>건복합성 피부 추천<br>민감하고 건조한 피부를 위한 각질 관리용 기능성 토너.
+              피부 표면의 죽은 각질을 부드럽게 제거하여 피부 턴오버 주기를 촉진시켜 피부 본연의 빛을 되찾아줍니다. 이후 보습 성분이 더욱 잘 흡수할 수 있도록 도와주며 피부 보호막을 강화시켜 피부
+              자체의 힘을 길러 주고 더욱
+              건강하게 관리해 줍니다.</p>
+          </div>
+        </li>
+        <li>
+          <div class="sp2Img">
+            <img src="./img/step/step2_cl3.png" alt="step2_cl3">
+          </div>
+          <div class="sp2Txt">
+            <h4>클래리파잉 로션<br> 트와이스 어 데이 엑스폴리에이터 3</h4>
+            <p>지복합성 피부 추천<br>민감하고 건조한 피부를 위한 각질 관리용 기능성 토너.
+              피부 표면의 죽은 각질을 부드럽게 제거하여 피부 턴오버 주기를 촉진시켜 피부 본연의 빛을 되찾아줍니다. 이후 보습 성분이 더욱 잘 흡수할 수 있도록 도와주며 피부 보호막을 강화시켜 피부
+              자체의 힘을 길러 주고 더욱
+              건강하게 관리해 줍니다.</p>
+          </div>
+        </li>
+        <li>
+          <div class="sp2Img">
+            <img src="./img/step/step2_cl4.png" alt="step2_cl4">
+          </div>
+          <div class="sp2Txt">
+            <h4>클래리파잉 로션<br> 트와이스 어 데이 엑스폴리에이터 4</h4>
+            <p>지성 피부 추천<br>민감하고 건조한 피부를 위한 각질 관리용 기능성 토너.
+              피부 표면의 죽은 각질을 부드럽게 제거하여 피부 턴오버 주기를 촉진시켜 피부 본연의 빛을 되찾아줍니다. 이후 보습 성분이 더욱 잘 흡수할 수 있도록 도와주며 피부 보호막을 강화시켜 피부
+              자체의 힘을 길러 주고 더욱
+              건강하게 관리해 줍니다.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="sp2Btn"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>
+    <!-- 3-step page(4)-->
+    <div class="sp3Station">
+      <div class="sp3Title">
+        <img src="./img/step/step3.png" alt="3.보습">
+      </div>
+      <ul class="sp3ImgTrain">
+        <li class>
+          <div class="sp3Img">
+            <img src="./img/step/step3_ddmg.png" alt="step3_ddmg">
+          </div>
+          <div class="sp3Txt">
+            <h4>드라마티컬리 디퍼런트 모이스춰라이징 젤</h4>
+            <p>수분을 보충해주면서 피부 표면의 피지를 흡수하여 유수분 발란스를 맞춰주는 산뜻한 젤 타입의 보습 노란 스폰지 로션.
+
+              티존이나 번들거리는 부위를 부드럽고 편안하게 유지시켜 주며, 끈적임 없이 빠르게 흡수되어 피부를 편안한 상태로 만들어 줍니다.</p>
+          </div>
+        </li>
+        <li>
+          <div class="sp3Img">
+            <img src="./img/step/step3_ddmj.png" alt="step3_ddmj">
+          </div>
+          <div class="sp3Txt">
+            <h4>드라마티컬리 디퍼런트™ 하이드레이팅 젤리</h4>
+            <p>하루 종일 피부 수분 지속을 도와주는 산뜻한 워터-젤리 타입의 초미세먼지까지 차단하는 워터 젤 로션.</p>
+          </div>
+        </li>
+        <li>
+          <div class="sp3Img">
+            <img src="./img/step/step3_ddml.jpg" alt="step3_ddml">
+          </div>
+          <div class="sp3Txt">
+            <h4>드라마티컬리 디퍼런트 모이스춰라이징 로션+</h4>
+            <p>3-스텝 스킨 케어 시스템 중 3 단계.
+              부드럽고 매끄러운 피부, 건강하고 빛나는 피부로 가꿔주는 모이스춰라이저.
+              똑똑한 노란색 모이스춰라이저는 하루 종일 수분을 공급하며, 부드럽게 발리고 빠르게 흡수됩니다.
+              피부의 수분 장벽을 강화시켜 많은 수분을 유지하고, 수분을 머금은 피부는 빛을 발합니다.
+
+              그 비밀은 고유한 혁신적인 3-스텝 스킨 케어 시스템에 있습니다. 이는 간단하고 고객 맞춤형이며 하루에 두 번 3분이면 됩니다.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="sp3Btn"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div>
+      <div class="footTop">
+        <div class="foot1">
+          <ul>
+            <li>매장찾기</li>
+            <li>고객센터 02-6971-3202</li>
+            <li>사이트맵</li>
+            <li>라이브 챗 상담하기</li>
+            <li>개인정보 처리 방침</li>
+            <li>FAQ</li>
+            <li>이용약관</li>
+          </ul>
+        </div>
+        <div class="foot2">
+          <ul>
+            <li>
+              <img src="./img/sns_kakao-talk.png" alt="">
+            </li>
+            <li>
+              <img src="./img/sns_youtube.png" alt="">
+            </li>
+            <li>
+              <img src="./img/sns_facebook.png" alt="">
+            </li>
+            <li>
+              <img src="./img/sns_instagram.png" alt="">
+            </li>
+          </ul>
+          <div class="assuar">
+            <img src="./img/footer.png" alt="품질보증">
+          </div>
+        </div>
+      </div>
+      <div class="footlow">
+        <p class="underLine">에스크로 가입확인</p>
+        <p>이엘씨에이한국(유) 대표 Teng, Hsiao-Hua, 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232</p>
+        <div class="footlow2">
+          <p>사업자등록번호 : 211-81-71889</p>
+          <p>통신판매업신고번호 : 강남-15737호</p>
+          <p class="underLine">사업자정보조회</p>
+          <p>이메일 : consumercare@kr.clinique.com</p>
+          <p>호스팅서비스 사업자 : ㈜엘지유플러스</p>
+        </div>
+        <p>COPYRIGHT © Clinique Laboratories, llc. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
