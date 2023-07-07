@@ -8,7 +8,7 @@
   <title>Clinique Official Site</title>
 
   <!-- css연결 -->
-  <link rel="stylesheet" href="./css/style-pc.css">
+  <link rel="stylesheet" href="./css/style-pc.css?ver=1">
   <link rel="stylesheet" href="./css/style-mo.css">
   <link rel="stylesheet" href="./css/reset.css">
 
@@ -142,13 +142,13 @@
   <!-- main -->
   <!-- main:page1 -->
   <main>
-    <div class="videoBanner">
+    <section class="videoBanner">
       <video control muted autoplay loop src="./video/evenbetter.mp4"></video>
       <!-- control muted autoplay loop -->
       <h1>GOOD-BYE MELANIN</h1>
-    </div>
+    </section>
     <!-- main:page2 -->
-    <div class="evenBetter">
+    <section class="evenBetter">
       <div class="textWrap">
         <ul>
           <li class="a">EVEN BETTER CLINICAL</li>
@@ -171,9 +171,9 @@
       <div class="evenModel contents">
         <img src="./img/page2_sulina4.png" alt="evenbetter sulina model">
       </div>
-    </div>
+    </section>
     <!-- main:page3 -->
-    <div class="surge">
+    <section class="surge">
       <div class="textWrap">
         <ul>
           <li class="a">MOISTURE SURGE</li>
@@ -194,9 +194,9 @@
         <p>뛰어난 수분감으로 사랑받는 크리니크의 모이스춰라이저를 확인해보세요</p>
         <p class="arrowBtn"><a href="./index3.html" target="_blank">전 체 보 기</a></p>
       </div>
-    </div>
+    </section>
     <!-- main:page4 -->
-    <div class="bestNow swiper">
+    <section class="bestNow swiper">
       <div class="bestText">
         <h4>THE BEST<br>NOW</h4>
       </div>
@@ -259,9 +259,9 @@
       </ul>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-    </div>
+    </section>
     <!-- main:page5 -->
-    <div class="reality contents">
+    <section class="reality contents">
       <h1>CLINICAL REALITY&trade; 피부진단 서비스</h1>
       <div class="realPro">
         <img src="./img/page5_product.png" alt="로고">
@@ -276,9 +276,9 @@
         <h4>QR코드 접속</h4>
         <img src="./img/page5_qr.png" alt="로고">
       </div>
-    </div>
+    </section>
     <!-- main:page6 -->
-    <div class="review contents">
+    <section class="review contents">
       <div class="reviewText">
         <div>
           <h4>REVIEW</h4>
@@ -301,10 +301,10 @@
           <img src="./img/page6_review2.png" alt="15%할인">
         </div>
       </div>
-    </div>
+    </section>
     <!-- main:page7 -->
-    <div class="benefit contents">
-      <div class="profit">
+    <section class="benefit">
+      <div class="profit contents">
         <h1>크리니크 공식몰 단독혜택</h1>
         <ul>
           <li>
@@ -330,21 +330,21 @@
         </ul>
       </div>
       <div class="newsletter">
-        <img src="./img/page7_bg.png" alt="뉴스레터 배경색">
-        <div class="newsText">
-          <h1>뉴스레터</h1>
+        <form class="newsText contents">
+          <legend>뉴스레터</legend>
           <p>뉴스레터 구독신청하고 혜택 알림받기</p>
-          <a href="#">
-            <h2>구 독 신 청</h2>
-          </a>
-          <div class="check_wrap">
-            <input type="checkbox" required id="check_btn">
-            <label for="check_btn"><span>크리니크의 새로운 서비스, 신상품, 이벤트 정보 등<br> 마케팅 목적의 최신정보를 미리 받아보고 싶으시다면
-                선택해주세요.</span></label>
-          </div>
-        </div>
+          <fieldset class="userwrite">
+            <input type="text" required class="textbox" placeholder="이메일주소를 기입해주세요">
+            <a href="#">구 독 신 청</a>
+            <fieldset class="check">
+              <input type="checkbox" required id="check_btn">
+              <label for="check_btn"><span>크리니크의 새로운 서비스, 신상품, 이벤트 정보 등<br> 마케팅 목적의 최신정보를 미리 받아보고 싶으시다면
+                  선택해주세요.</span></label>
+            </fieldset>
+          </fieldset>
+        </form>
       </div>
-    </div>
+    </section>
   </main>
   <!-- footer -->
   <footer>
