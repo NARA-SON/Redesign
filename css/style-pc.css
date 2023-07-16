@@ -625,6 +625,11 @@
     z-index: 2;
   }
 
+  .bestNowCon>div{
+    color:#b8b8b8;
+  }
+
+
   .bestItem {
     display: flex;
     position: relative;
@@ -772,6 +777,10 @@
     right: 0;
   }
 
+  .profit{
+    margin-bottom:50px;
+  }
+
   .profitlist {
     display: flex;
     justify-content: center;
@@ -801,7 +810,6 @@
     transform: translateX(-50%);
     text-align: center;
     font-size: 1.4rem;
-    line-height: 150%;
     font-family: 'GowunBatang-Regular';
     text-decoration: none;
     transition: all 0.5s ease 0s;
@@ -820,7 +828,7 @@
   }
 
   .newsText {
-    width: 63%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
   }
@@ -933,15 +941,11 @@
 
   .brand-story>div>p {
     margin: 40px 0;
-    line-height: 180%;
     font-size: 24px;
   }
 
   /* 2page */
-  .brand-story2,
-  .brand-story3,
-  .brand-story4,
-  .brand-story5 {
+  .bs_total>section {
     height: 1000px;
   }
 
@@ -969,8 +973,7 @@
   }
 
   .brand-story2>div>p {
-    margin-bottom: 60px;
-    line-height: 160%;
+    margin-bottom: 50px;
   }
 
   /* 3page */
@@ -1098,11 +1101,7 @@
     color: white;
   }
 
-  /* MOISTURE SURGE */
-  /* MOISTURE SURGE */
-  /* MOISTURE SURGE */
-  /* MOISTURE SURGE */
-  /* MOISTURE SURGE */
+  /* MOISTURE SURGE - SUB PAGE 3*/
   .moisture_surge1 {
     position: relative;
     background: linear-gradient(90deg, #F8F8F8, transparent)
@@ -1284,11 +1283,6 @@
     padding: 50px 0;
   }
 
-  .step>div>h4 {
-    font-size: 20px;
-    line-height: 180%;
-  }
-
   /* 3STEP - page(2)*/
   .sp1Station {
     margin-left: 300px;
@@ -1361,10 +1355,6 @@
     font-size: 20px;
     margin-bottom: 20px;
     color: rgb(0, 122, 65);
-  }
-
-  .sp1ImgTrain p {
-    line-height: 25px;
   }
 
   .sp1Txt {
@@ -1456,10 +1446,6 @@
     color: rgb(0, 122, 65);
   }
 
-  .sp2ImgTrain p {
-    line-height: 25px;
-  }
-
   .sp2Txt {
     box-sizing: border-box;
     width: 400px;
@@ -1549,10 +1535,6 @@
     color: rgb(0, 122, 65);
   }
 
-  .sp3ImgTrain p {
-    line-height: 25px;
-  }
-
   .sp3Txt {
     box-sizing: border-box;
     width: 400px;
@@ -1569,10 +1551,6 @@
   }
 
   /* footer */
-  footer {
-    margin-top: 8%;
-  }
-
   .footerWrap {
     background: #eee;
     position: relative;
@@ -1634,7 +1612,6 @@
 
   .footlow {
     padding-bottom: 50px;
-    line-height: 170%;
   }
 
   .underLine {
