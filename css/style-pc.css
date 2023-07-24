@@ -233,12 +233,9 @@
   }
 
   /* 1뎁스 조정 */
-  nav>.gnb {
+  .gnb {
     display: flex;
     justify-content: space-between;
-  }
-
-  .gnb {
     width: 800px;
     height: 50px;
     position: relative;
@@ -254,6 +251,12 @@
     width: 100%;
     height: 100%;
   }
+
+  .depi{display:none;}
+  .depi2{display:none;}
+  .depi3{display:none;}
+  .btnMenu{display:none;}
+  .btnPro{display:none;}
 
   /* 2뎁스 조정 */
   .gnb>li>.gnb2dep {
