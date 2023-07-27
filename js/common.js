@@ -63,14 +63,14 @@ $(document).ready(function(){
 
     $(".gnb>li").click(function(){
       if($(this).hasClass("on")==true)
-      {$(this).css("height","30px")
+      {$(this).css("height","40px")
     $(this).removeClass("on")}
     else{
-      $(".gnb>li").css("height","30px")
+      $(".gnb>li").css("height","40px")
       $(".gnb>li").removeClass("on")
 
       let li2dep = $(".gnb2dep>ul>li>a").length
-      $(this).css("height",(li2dep + 1)*30 + "px")
+      $(this).css("height",(li2dep + 1)*40 + "px")
       $(this).addClass("on")
     }
     })
