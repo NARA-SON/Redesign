@@ -375,7 +375,9 @@
   /* --------layout - main --------*/
   .videoBanner{
     padding-top:50px;
+    width:100vw;
   }
+
   .videoBanner video {
     width: 100%;
     object-fit: cover;
@@ -398,38 +400,67 @@
   }
 
   .textWrap .a{
-    font-size:5rem;
+    font-size:4.6rem;
     font-family:'Meramoon';
     line-height:90%;
   }
   .textWrap .b{display:none;}
 
   .evenProduct{
-    border:1px solid blue;
     display:flex;
     flex-direction: column-reverse;
+    background:url(../img/page2_material.png) no-repeat 0% 0%;
+    background-size:100%;
+    position:relative;
   }
+
   .evenProduct img{
-    border:1px solid red;
     width:40%;
-    margin-left:150px;
+    margin-left:50%;
   }
 
   .evenText{
-    border:1px solid red;
+    line-height:150%;
+  }
+
+  .evenText>h4{
+    font-weight: bold;
+    border-bottom:8px solid pink;
+    display:inline-block;
+    height:10px;
+  }
+
+  .evenText>p:last-of-type{
+    font-weight:bold;
+    border-bottom:8px solid pink;
+    display:inline-block;
+    height:10px;
+  }
+
+  .evenText>a{
+    background:#000;
+    color:#fff;
+    display:block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+    position:absolute;
+    top:60%;
+    left:0;
   }
 
   .evenModel img{
     width:100%;
     position:absolute;
-    top:11%;
+    top:10%;
     right:0%;
   }
 
   .evenTexture img{
     width:40%;
     position:absolute;
-    top:48%;
+    top:42%;
     right:35%;
     z-index:1;
   }
@@ -450,6 +481,7 @@
     position:absolute;
     top:18%;
     right:-1%;
+    overflow:hidden;
   }
 
   .surgeModel:after {
@@ -483,12 +515,14 @@
     top: 6%;
     right: -8%;
     z-index: 1;
+    overflow:hidden;
   }
 
   .surgeText {
     width:70%;
     height:150px;
     margin-left:20%;
+    margin-top:10px;
   }
 
   .surgeText>a {
@@ -513,7 +547,7 @@
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 10000000;
   }
 
   .bestNowCon>div{
@@ -645,7 +679,6 @@
   }
 
   .profit{
-    width:100%;
     margin-bottom:50px;
     overflow:hidden;
   }
@@ -653,11 +686,13 @@
   .profitlist {
     display: flex;
     margin-top: 20px;
-    width:calc((220*5) + 80px);
+    width:calc((180*5) + 80px);
+    transform:translateX(-30%);
+    transition:all 0.7s ease 0s;
   }
 
   .profitlist>li {
-    width:220px;
+    width:180px;
     height:300px;
     margin-right: 20px;
     position: relative;
@@ -686,7 +721,7 @@
   .btnPro{
     display:flex;
     justify-content:space-between;
-    width:40%;
+    width:90%;
     position:absolute;
     top:50%;
     left:50%;

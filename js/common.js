@@ -110,18 +110,18 @@ $(document).ready(function(){
     let count = 0;
     $(".btnProPrev").click(function(){
       count--;
-      if(count<0){count=0}
+      if(count<0){count=5}
       moveSliderPro(count)
     })
 
     $(".btnProNext").click(function(){
       count++;
-      if(count>2){count=2}
+      if(count>5){count=0}
       moveSliderPro(count)
     })
 
     function moveSliderPro(idx){
-      $(".profitlist").css("transform","translateX("+(-34.5 * idx) + "%)")
+      $(".profitlist").css("transform","translateX("+(-40 * idx) + "%)")
     }
 
 
