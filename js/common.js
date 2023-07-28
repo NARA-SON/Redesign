@@ -48,10 +48,7 @@ $(document).ready(function(){
       .animate({ scrollTop: 0 }, 1000)
   })
 
-  // 모바일 반응형
-  if (matchMedia("screen and (max-width: 760px)").matches) {
-
-    $(".btnMenu").click(function(){
+  $(".btnMenu").click(function(){
       if($(".gnb").hasClass("on")==false)
       {$(".gnb").addClass("on")
         $(".btnMenu").addClass("close")}
@@ -61,6 +58,9 @@ $(document).ready(function(){
       }
     })
 
+  // 모바일 반응형
+  if (matchMedia("screen and (max-width: 760px)").matches) {
+    
     $(".gnb>li").click(function(){
       if($(this).hasClass("on")==true)
       {$(this).css("height","40px")
@@ -69,7 +69,7 @@ $(document).ready(function(){
       $(".gnb>li").css("height","40px")
       $(".gnb>li").removeClass("on")
 
-      let li2dep = $(".gnb2dep>ul>li>a").length
+      let li2dep = $(".gnb2dep>ul>li").length
       $(this).css("height",(li2dep + 1)*40 + "px")
       $(this).addClass("on")
     }

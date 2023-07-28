@@ -404,11 +404,11 @@
   }
 
   .evenBetter>.textWrap>ul>.a {
-    animation: mrtlWord1 10s linear 0s infinite;
+    animation: mrtlWord1 15s linear 0s infinite;
   }
 
   .evenBetter>.textWrap>ul>.b {
-    animation: mrtlWord2 10s linear 5s infinite;
+    animation: mrtlWord2 15s linear 7s infinite;
     color: rgb(254 214 250);
   }
 
@@ -533,11 +533,11 @@
   }
 
   .surge>.textWrap>ul>.a {
-    animation: mltrWord1 10s linear 0s infinite;
+    animation: mltrWord1 15s linear 0s infinite;
   }
 
   .surge>.textWrap>ul>.b {
-    animation: mltrWord2 10s linear 5s infinite;
+    animation: mltrWord2 15s linear 7s infinite;
     color: rgb(244 211 195);
   }
 
