@@ -233,6 +233,7 @@
   }
 
   /* 1뎁스 조정 */
+  .mognb{display:none!important;}
   .gnb {
     display: flex;
     justify-content: space-between;

@@ -27,7 +27,7 @@ $(document).ready(function () {
       },
     on: {
       slideChange: function () {
-        console.log(this.activeIndex) 
+        // console.log(this.activeIndex) 
         $(".bestItem>li").removeClass("inActive")
         $(".bestItem>li").eq(this.activeIndex).addClass("inActive")
         $(".bestItem>li").eq(this.activeIndex + 4).addClass("inActive")

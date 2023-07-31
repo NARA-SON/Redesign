@@ -59,53 +59,64 @@ $(document).ready(function(){
     })
 
   // 모바일 반응형
-  if (matchMedia("screen and (max-width: 760px)").matches) {
+  
     
-    $(".gnb>li").click(function(){
-      if($(this).hasClass("on")==true)
-      {$(this).css("height","40px")
-    $(this).removeClass("on")}
-    else{
-      $(".gnb>li").css("height","40px")
-      $(".gnb>li").removeClass("on")
-
-      let li2dep = $(".gnb2dep>ul>li").length
-      $(this).css("height",(li2dep + 1)*40 + "px")
-      $(this).addClass("on")
-    }
-    })
-
-    $(".gnb ul").click(function(){
-      return false;
-    })
-
-    $(".gnb2dep>ul>li").click(function(){
-      if($(this).hasClass("on")==true)
-      {$(this).css("height","30px")
-    $(this).removeClass("on")}
-    else{
+    $(".mognb .depi").click(function(){
       $(".gnb2dep>ul>li").css("height","30px")
       $(".gnb2dep>ul>li").removeClass("on")
 
-      let li3dep = $(this).find("li").length
-      $(this).css("height",(li3dep + 2)*20 + "px")
-      $(this).addClass("on")
-    }
+      if($(this).parent().parent().hasClass("on")==true){
+        $(this).parent().parent().css("height","40px")
+        $(this).parent().parent().removeClass("on")
+      }else{
+        $(".mognb>li").css("height","40px")
+        $(".mognb>li").removeClass("on")
+
+        // let li2dep = $(".gnb2dep>ul>li").length
+        let li2dep = $(this).parent().parent().children(".gnb2dep").children("ul").children("li").length
+        console.log(li2dep)
+        $(this).parent().parent().css("height",(li2dep)*30+40+ "px")
+        $(this).parent().parent().addClass("on")
+      }
     })
 
-    $(".manCare>ul>li").click(function(){
-      if($(this).hasClass("on")==true)
-      {$(this).css("height","30px")
-    $(this).removeClass("on")}
-    else{
-      $(".manCare>ul>li").css("height","30px")
-      $(".manCare>ul>li").removeClass("on")
+    // $(".mognb ul").click(function(){
+    //   return false;
+    // })
 
-      let li4dep = $(this).find("li").length
-      $(this).css("height",(li4dep + 2)*20 + "px")
-      $(this).addClass("on")
-    }
+    $(".mognb .depi2").click(function(){
+      if($(this).parent().parent().hasClass("on")==true){
+        $(this).parent().parent().css("height","30px")
+        $(this).parent().parent().removeClass("on")
+      }else{
+        $(".gnb2dep>ul>li").css("height","30px")
+        $(".gnb2dep>ul>li").removeClass("on")
+
+        let li3dep = $(this).parent().parent().children("ul").children("li").length
+        $(this).parent().parent().css("height",(li3dep)*25 + 30 + "px")
+        $(this).parent().parent().addClass("on")
+      }
+      // 1뎁스의 높이를 계산함
+      let currentActiveLi3 = $(this).parent().parent().parent().children("li.on").children("ul").children("li").length
+      console.log(currentActiveLi3)
+      let currentActiveLi2 = $(this).parent().parent().parent().children("li").length
+      console.log(currentActiveLi2)
+      $(this).parent().parent().parent().parent().parent().height(currentActiveLi3*25+currentActiveLi2*30+40)
     })
+
+    // $(".manCare>ul>li").click(function(){
+    //   if($(this).hasClass("on")==true)
+    //   {$(this).css("height","30px")
+    // $(this).removeClass("on")}
+    // else{
+    //   $(".manCare>ul>li").css("height","30px")
+    //   $(".manCare>ul>li").removeClass("on")
+
+    //   let li4dep = $(this).find("li").length
+    //   $(this).css("height",(li4dep + 2)*20 + "px")
+    //   $(this).addClass("on")
+    // }
+    // })
 
     let count = 0;
     $(".btnProPrev").click(function(){
@@ -125,7 +136,7 @@ $(document).ready(function(){
     }
 
 
-  }
+
 
 
 
