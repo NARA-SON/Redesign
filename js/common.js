@@ -59,7 +59,6 @@ $(document).ready(function(){
     })
 
   // 모바일 반응형
-  
     
     $(".mognb .depi").click(function(){
       $(".gnb2dep>ul>li").css("height","30px")
